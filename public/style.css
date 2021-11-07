@@ -10,9 +10,12 @@
   scroll-behavior: smooth;
 }
 
+html {
+  background-color: var(--light);
+}
+
 body {
   margin: 0;
-  background-color: var(--light);
 }
 /* start of header */
 header {
