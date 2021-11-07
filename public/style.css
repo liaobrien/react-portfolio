@@ -50,3 +50,8 @@ header {
   padding-bottom: 5px;
   border-bottom: 5px solid var(--light);
 }
+
+.header nav ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
