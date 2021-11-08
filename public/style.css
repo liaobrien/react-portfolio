@@ -61,7 +61,12 @@ header {
   background-color: var(--medium);
 }
 
-.btn {
+/* .btn {
+  background-color: var(--dark);
+  color: var(--light);
+} */
+
+.link {
   background-color: var(--dark);
   color: var(--light);
 }
