@@ -34,5 +34,34 @@ const projects = [
 ]
 
 export default function Project() {
-
+      return (
+            <div className="row justify-content-center mb-4">
+                  {
+                        projects.map((project) => (
+                              <div className="card col-lg-3 m-3">
+                                    <img
+                                          src="./assets/images/pack-rat.png"
+                                          className="card-img-top"
+                                          alt="screenshot"
+                                    />
+                                    <div className="card-body">
+                                          <h5 className="card-title">{project.title}</h5>
+                                          <a
+                                                href={project.deploy}
+                                                className="btn"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                          >Deployed</a>
+                                          <a
+                                                href="https://github.com/liaobrien/{project.github}"
+                                                className="btn"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                          >GitHub</a>
+                                    </div>
+                              </div>
+                        ))
+                  }
+            </div>
+      )
 }

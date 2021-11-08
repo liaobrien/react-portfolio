@@ -56,6 +56,15 @@ header {
   font-weight: bold;
 }
 
+.card-body {
+  background-color: var(--medium);
+}
+
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
 .footer {
   list-style-type: none;
   background-color: var(--light);
