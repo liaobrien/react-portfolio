@@ -58,3 +58,11 @@ header {
   color: white;
   font-weight: bold;
 }
+
+.footer {
+  list-style-type: none;
+}
+
+.bi {
+  font-size: 2rem;
+}
