@@ -10,7 +10,8 @@
   scroll-behavior: smooth;
 }
 
-html {
+html,
+#root {
   background-color: var(--light);
 }
 
