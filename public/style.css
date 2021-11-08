@@ -65,3 +65,7 @@ header {
   font-size: 2rem;
   color: var(--bs-gray-dark);
 }
+
+.bi:hover {
+  color: black;
+}
