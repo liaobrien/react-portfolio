@@ -1,7 +1,7 @@
 :root {
   --dark: rgb(53, 11, 77);
   --light: lavender;
-  --medium: rgb(182, 149, 201);
+  --medium: rgb(167, 149, 201);
 }
 
 * {
@@ -63,4 +63,5 @@ header {
 
 .bi {
   font-size: 2rem;
+  color: var(--bs-gray-dark);
 }
