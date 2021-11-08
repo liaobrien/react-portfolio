@@ -3,32 +3,32 @@ import React from "react";
 const projects = [
       {
             title: 'Decked Out',
-            github: 'Decked-Out',
+            image: './assets/images/decked-out.png',
             deploy: 'https://hidden-island-92263.herokuapp.com/'
       },
       {
             title: 'Pack Rat',
-            github: 'Pack-Rat',
+            image: './assets/images/pack-rat.png',
             deploy: 'https://liaobrien.github.io/Pack-Rat/'
       },
       {
             title: 'Tech Blog',
-            github: 'tech-blog',
+            image: './assets/images/tech-blog.png',
             deploy: 'https://fast-chamber-00133.herokuapp.com/'
       },
       {
             title: 'Weather Dashboard',
-            github: 'weather-dashboard',
+            image: './assets/images/weather-dashboard.png',
             deploy: 'https://liaobrien.github.io/weather-dashboard'
       },
       {
             title: 'Budget Tracker',
-            github: 'offline-budget-tracker',
+            image: './assets/images/budget-tracker.png',
             deploy: 'https://hidden-badlands-92774.herokuapp.com/'
       },
       {
             title: 'Express Note Taker',
-            github: 'note-taker',
+            image: './assets/images/note-taker.png',
             deploy: 'https://pacific-hamlet-03759.herokuapp.com/'
       }
 ]
@@ -40,7 +40,7 @@ export default function Project() {
                         projects.map((project) => (
                               <div className="card col-lg-3 m-3">
                                     <img
-                                          src="./assets/images/pack-rat.png"
+                                          src={project.image}
                                           className="card-img-top"
                                           alt="screenshot"
                                     />
