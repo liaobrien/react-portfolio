@@ -61,6 +61,7 @@ header {
 
 .footer {
   list-style-type: none;
+  background-color: var(--light);
 }
 
 .bi {
