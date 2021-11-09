@@ -45,7 +45,7 @@ export default function Project() {
                   <div className="row justify-content-center my-4">
                         {
                               projects.map((project) => (
-                                    <div className="card p-0 col-lg-3 m-3">
+                                    <div key={project.id} className="card p-0 col-lg-3 m-3">
                                           <img
                                                 src={project.image}
                                                 className="card-img-top"
