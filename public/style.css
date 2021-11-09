@@ -33,7 +33,7 @@ header {
   padding-left: 50px;
 }
 
-.header nav {
+.navigation {
   display: block;
   font-size: 150%;
   margin-block-start: 0.83em;
@@ -41,18 +41,18 @@ header {
   margin-inline-end: 30px;
 }
 
-.header nav ul {
+.navigation ul {
   list-style-type: none;
   display: flex;
 }
 
-.header nav ul li a {
+.navigation ul li a {
   color: var(--medium);
   text-decoration: none;
   margin: 0px 10px 0px 10px;
 }
 
-.header nav ul li a:hover {
+.navigation ul li a:hover {
   color: var(--light);
   font-weight: bold;
 }

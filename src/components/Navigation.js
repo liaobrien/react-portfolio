@@ -2,12 +2,12 @@ import React from 'react';
 // note: move all the jsx in here to header.js; this will hold my different pages i think (about, contact, etc.)
 export default function Navigation({ currentPage, handlePageChange }) {
       return (
-            <nav>
+            <nav className="navigation">
                   <ul>
                         <li><a href="#about-me"
                               onClick={() => handlePageChange('About Me')}
 
-                              className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+                              className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
                         >About Me</a></li>
                         <li><a href="#work"
                               onClick={() => handlePageChange('Work')}
