@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import Navigation from './Navigation';
+// import Navigation from './Navigation';
 import About from './pages/About';
 import Project from './pages/Project'
 import Contact from './pages/Contact';
+import Header from './Header';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
-  // TODO: Add a comment describing the functionality of this method
+
   const renderPage = () => {
     if (currentPage === 'Work') {
       return <Project />;
@@ -22,7 +23,8 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header handlePageChange={handlePageChange} currentPage={currentPage} />
+      {/* <Navigation currentPage={currentPage} handlePageChange={handlePageChange} /> */}
       {renderPage()}
     </div>
   );
