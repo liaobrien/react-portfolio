@@ -1,8 +1,13 @@
 import React from "react";
 
+const contactStyle = {
+      maxWidth: '700px',
+      margin: '0 auto'
+}
+
 export default function Contact() {
       return (
-            <div className="contact m-5" id="contact">
+            <div className="contact mt-4" id="contact" style={contactStyle}>
                   <form>
                         <div className="form-group">
                               <label htmlFor="name">Name</label>

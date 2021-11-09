@@ -39,6 +39,11 @@ const projects = [
       }
 ]
 
+const buttonStyle = {
+      backgroundColor: 'rgb(53, 11, 77)',
+      color: 'lavender'
+}
+
 export default function Project() {
       return (
             <section className="container" id="work">
@@ -55,13 +60,15 @@ export default function Project() {
                                                 <h5 className="card-title">{project.title}</h5>
                                                 <a
                                                       href={project.deploy}
-                                                      className="btn link"
+                                                      className="btn link m-1"
+                                                      style={buttonStyle}
                                                       target="_blank"
                                                       rel="noreferrer"
                                                 >Deployed</a>
                                                 <a
                                                       href="https://github.com/liaobrien/{project.github}"
-                                                      className="btn link"
+                                                      className="btn link m-1"
+                                                      style={buttonStyle}
                                                       target="_blank"
                                                       rel="noreferrer"
                                                 >GitHub</a>
