@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { validateEmail } from "../../utils/helpers";
 
 const contactStyle = {
       maxWidth: '700px',
@@ -15,18 +16,23 @@ export default function Contact() {
 
       const handleInputChange = (event) => {
             const { name, value } = event.target;
-            return name === "name" ? setName(value) : setEmail(value);
+            return name === "name" ? setName(value) : name === "email" ? setEmail(value) : setMessage(value);
       }
 
-      // function to compare email to regex
-      // function validateEmail(email) {
-      //       const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      //       return re.test(String(email).toLowerCase());
-      // }
+      if (!validateEmail(email)) {
+            // alert('Email is invalid. Please enter a valid email address.');
+            // We want to exit out of this code block if something is wrong so that the user can correct it
+            return;
+            // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+      }
+      if (name === "" || email === "" || message === "") {
+            alert("Please fill out required fields.");
+            return;
+      }
 
       const handleSubmit = (event) => {
             event.preventDefault();
-            alert(`Message submitted successfully!`);
+            // alert(`Thanks for the message, ${name}! I'll get back to you as soon as possible.`);
 
 
             setName('');

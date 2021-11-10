@@ -1,0 +1,92 @@
+:root {
+  --dark: rgb(53, 11, 77);
+  --light: lavender;
+  --medium: rgb(167, 149, 201);
+}
+
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+#root {
+  background-color: var(--light);
+}
+
+body {
+  margin: 0;
+}
+/* start of header */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--dark);
+}
+
+.header h1 {
+  color: var(--light);
+  font-size: 440%;
+  padding-left: 50px;
+}
+
+.navigation {
+  display: block;
+  font-size: 150%;
+  margin-block-start: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 30px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation ul li a {
+  color: var(--medium);
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+}
+
+.navigation ul li a:hover {
+  color: var(--light);
+  font-weight: bold;
+}
+
+#headshot {
+  width: 300px;
+  border-radius: 100%;
+  box-shadow: 8px 8px grey;
+}
+
+.card-body {
+  background-color: var(--medium);
+}
+
+/* .btn {
+  background-color: var(--dark);
+  color: var(--light);
+} */
+
+.link {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.footer {
+  list-style-type: none;
+  background-color: var(--light);
+}
+
+.bi {
+  font-size: 2rem;
+  color: var(--bs-gray-dark);
+}
+
+.bi:hover {
+  color: black;
+}

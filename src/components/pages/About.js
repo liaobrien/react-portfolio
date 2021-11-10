@@ -1,9 +1,10 @@
 import React from "react";
+import headshot from '../../assets/images/headshot-min.jpg'
 
 export default function About() {
       return (
             <div id="about-me" className="d-flex container justify-content-center align-items-center my-5">
-                  <img src="./assets/images/headshot-min.jpg" id="headshot" className="mx-3" alt="headshot" />
+                  <img src={headshot} id="headshot" className="mx-3" alt="headshot" />
                   <div>
                         <h2>About Me</h2>
                         <p>I'm a full stack web developer from Newark, Delaware. Shortly before
