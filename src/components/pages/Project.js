@@ -78,7 +78,7 @@ export default function Project() {
                                                       rel="noreferrer"
                                                 >Deployed</a>
                                                 <a
-                                                      href="https://github.com/liaobrien/{project.github}"
+                                                      href={project.github}
                                                       className="btn link m-1"
                                                       style={buttonStyle}
                                                       target="_blank"
