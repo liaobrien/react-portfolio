@@ -11,9 +11,6 @@ export default function Contact() {
       const [email, setEmail] = useState('');
       const [message, setMessage] = useState('');
 
-      // entries are invalid by default until correct
-      // const [validated] = useState(false);
-
       const handleInputChange = (event) => {
             const { name, value } = event.target;
             if (name === "name") {
@@ -26,10 +23,9 @@ export default function Contact() {
       }
 
 
-
       const handleSubmit = (event) => {
             event.preventDefault();
-            // alert(`Thanks for the message, ${name}! I'll get back to you as soon as possible.`);
+
             if (!validateEmail(email)) {
                   alert('Email is invalid. Please enter a valid email address.');
                   // We want to exit out of this code block if something is wrong so that the user can correct it
@@ -51,6 +47,7 @@ export default function Contact() {
 
       return (
             <div className="contact mt-4" id="contact" style={contactStyle}>
+                  <h2 className="text-center">Have a question? Send me a message!</h2>
                   <form>
                         <div className="form-group">
                               <label htmlFor="name">Name</label>
