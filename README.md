@@ -36,6 +36,4 @@ This project is licensed under the MIT license.
 
 ## Questions
 
-## Questions
-
 If you have any questions about this repository, you contact me directly at liaobrien123@gmail.com. You can also find more of my work at [liaobrien](https://github.com/liaobrien).
