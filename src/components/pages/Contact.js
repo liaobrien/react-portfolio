@@ -16,24 +16,29 @@ export default function Contact() {
 
       const handleInputChange = (event) => {
             const { name, value } = event.target;
-            return name === "name" ? setName(value) : name === "email" ? setEmail(value) : setMessage(value);
+            if (name === "name") {
+                  setName(value);
+            } else if (name === "email") {
+                  setEmail(value);
+            } else if (name === "message") {
+                  setMessage(value);
+            }
       }
 
-      if (!validateEmail(email)) {
-            // alert('Email is invalid. Please enter a valid email address.');
-            // We want to exit out of this code block if something is wrong so that the user can correct it
-            return;
-            // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-      }
-      if (name === "" || email === "" || message === "") {
-            alert("Please fill out required fields.");
-            return;
-      }
+
 
       const handleSubmit = (event) => {
             event.preventDefault();
             // alert(`Thanks for the message, ${name}! I'll get back to you as soon as possible.`);
-
+            if (!validateEmail(email)) {
+                  alert('Email is invalid. Please enter a valid email address.');
+                  // We want to exit out of this code block if something is wrong so that the user can correct it
+                  return;
+            }
+            if (name === "" || email === "" || message === "") {
+                  alert("Please fill out required fields.");
+                  return;
+            }
 
             setName('');
             setEmail('');
