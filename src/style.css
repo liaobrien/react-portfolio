@@ -56,6 +56,11 @@ header {
   color: var(--light);
 }
 
+.active {
+  color: var(--light) !important;
+  font-weight: bold;
+}
+
 #headshot {
   width: 300px;
   border-radius: 100%;
