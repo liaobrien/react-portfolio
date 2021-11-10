@@ -54,7 +54,6 @@ header {
 
 .navigation ul li a:hover {
   color: var(--light);
-  font-weight: bold;
 }
 
 #headshot {
