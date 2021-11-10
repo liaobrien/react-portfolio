@@ -5,37 +5,43 @@ const projects = [
             id: 1,
             title: 'Decked Out',
             image: './assets/images/decked-out.png',
-            deploy: 'https://hidden-island-92263.herokuapp.com/'
+            deploy: 'https://hidden-island-92263.herokuapp.com/',
+            github: 'https://github.com/liaobrien/Decked-Out'
       },
       {
             id: 2,
             title: 'Pack Rat',
             image: './assets/images/pack-rat.png',
-            deploy: 'https://liaobrien.github.io/Pack-Rat/'
+            deploy: 'https://liaobrien.github.io/Pack-Rat/',
+            github: 'https://github.com/liaobrien/Pack-Rat'
       },
       {
             id: 3,
             title: 'Tech Blog',
             image: './assets/images/tech-blog.png',
-            deploy: 'https://fast-chamber-00133.herokuapp.com/'
+            deploy: 'https://fast-chamber-00133.herokuapp.com/',
+            github: 'https://github.com/liaobrien/tech-blog'
       },
       {
             id: 4,
             title: 'Weather Dashboard',
             image: './assets/images/weather-dashboard.png',
-            deploy: 'https://liaobrien.github.io/weather-dashboard'
+            deploy: 'https://liaobrien.github.io/weather-dashboard',
+            github: 'https://github.com/liaobrien/weather-dashboard'
       },
       {
             id: 5,
             title: 'Budget Tracker',
             image: './assets/images/budget-tracker.png',
-            deploy: 'https://hidden-badlands-92774.herokuapp.com/'
+            deploy: 'https://hidden-badlands-92774.herokuapp.com/',
+            github: 'https://github.com/liaobrien/offline-budget-tracker'
       },
       {
             id: 6,
             title: 'Express Note Taker',
             image: './assets/images/note-taker.png',
-            deploy: 'https://pacific-hamlet-03759.herokuapp.com/'
+            deploy: 'https://pacific-hamlet-03759.herokuapp.com/',
+            github: 'https://github.com/liaobrien/note-taker'
       }
 ]
 
