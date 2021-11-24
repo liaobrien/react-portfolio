@@ -70,39 +70,37 @@ const buttonStyle = {
 
 export default function Project() {
       return (
-            <section className="container" id="work">
-                  <div className="row justify-content-center my-4">
-                        {
-                              projects.map((project) => (
-                                    <div key={project.id} className="card p-0 col-lg-4 m-3 text-center">
-                                          <img
-                                                src={project.image}
-                                                className="card-img-top"
-                                                alt="screenshot"
-                                          />
-                                          <div className="card-body">
-                                                <h5 className="card-title"><strong>{project.title}</strong></h5>
-                                                <p>{project.description}</p>
-                                                <p><strong>Tools:</strong> <br /> {project.tools}</p>
-                                                <a
-                                                      href={project.deploy}
-                                                      className="btn link m-1"
-                                                      style={buttonStyle}
-                                                      target="_blank"
-                                                      rel="noreferrer"
-                                                >Deployed</a>
-                                                <a
-                                                      href={project.github}
-                                                      className="btn link m-1"
-                                                      style={buttonStyle}
-                                                      target="_blank"
-                                                      rel="noreferrer"
-                                                >GitHub</a>
-                                          </div>
+            <div className="row justify-content-center my-4">
+                  {
+                        projects.map((project) => (
+                              <div key={project.id} className="card p-0 col-lg-4 m-3 text-center">
+                                    <img
+                                          src={project.image}
+                                          className="card-img-top"
+                                          alt="screenshot"
+                                    />
+                                    <div className="card-body">
+                                          <h5 className="card-title"><strong>{project.title}</strong></h5>
+                                          <p>{project.description}</p>
+                                          <p><strong>Tools:</strong> <br /> {project.tools}</p>
+                                          <a
+                                                href={project.deploy}
+                                                className="btn link m-1"
+                                                style={buttonStyle}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                          >Deployed</a>
+                                          <a
+                                                href={project.github}
+                                                className="btn link m-1"
+                                                style={buttonStyle}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                          >GitHub</a>
                                     </div>
-                              ))
-                        }
-                  </div>
-            </section>
+                              </div>
+                        ))
+                  }
+            </div>
       )
 }
