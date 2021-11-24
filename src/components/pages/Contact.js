@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import emailjs from "emailjs-com";
 
 const contactStyle = {
       maxWidth: '700px',
@@ -20,10 +21,9 @@ export default function Contact() {
             } else if (name === "message") {
                   setMessage(value);
             }
-      }
+      };
 
-
-      const handleSubmit = (event) => {
+      const sendEmail = (event) => {
             event.preventDefault();
 
             if (!validateEmail(email)) {
@@ -42,13 +42,19 @@ export default function Contact() {
             setEmail('');
             setMessage('');
 
-      }
+            emailjs.sendForm('gmail', 'template_qx5rsjl', event.target, 'user_Ikap7VQi7UD4nPmTt8ZhY')
+                  .then((result) => {
+                        console.log(result.text);
+                  }, (error) => {
+                        console.log(error.text);
+                  });
+      };
 
 
       return (
             <div className="contact mt-4" id="contact" style={contactStyle}>
                   <h2 className="text-center">Have a question? Send me a message!</h2>
-                  <form>
+                  <form onSubmit={sendEmail}>
                         <div className="form-group">
                               <label htmlFor="name">Name</label>
                               <input onChange={handleInputChange} type="text" name="name" value={name} className="form-control" id="name" />
@@ -61,7 +67,7 @@ export default function Contact() {
                               <label htmlFor="message">Message</label>
                               <textarea onChange={handleInputChange} rows="3" type="text" name="message" value={message} className="form-control" id="message" />
                         </div>
-                        <button type="submit" className="btn btn-dark" onClick={handleSubmit}>Submit</button>
+                        <button type="submit" className="btn btn-dark">Submit</button>
                   </form>
             </div>
       )
