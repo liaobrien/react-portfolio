@@ -4,51 +4,51 @@ import PackRat from '../../assets/images/pack-rat.png';
 import TechBlog from '../../assets/images/tech-blog.png';
 import WeatherDash from '../../assets/images/weather-dashboard.png';
 import BudgetTracker from '../../assets/images/budget-tracker.png';
-import NoteTaker from '../../assets/images/note-taker.png';
+import Bingeworthy from '../../assets/images/bingeworthy.png';
 
 const projects = [
       {
             id: 1,
+            title: 'BingeWorthy',
+            image: Bingeworthy,
+            deploy: 'https://nameless-castle-76240.herokuapp.com/',
+            github: 'https://github.com/liaobrien/bingeworthy'
+      },
+      {
+            id: 2,
             title: 'Decked Out',
             image: DeckedOut,
             deploy: 'https://hidden-island-92263.herokuapp.com/',
             github: 'https://github.com/liaobrien/Decked-Out'
       },
       {
-            id: 2,
+            id: 3,
             title: 'Pack Rat',
             image: PackRat,
             deploy: 'https://liaobrien.github.io/Pack-Rat/',
             github: 'https://github.com/liaobrien/Pack-Rat'
       },
       {
-            id: 3,
+            id: 4,
             title: 'Tech Blog',
             image: TechBlog,
             deploy: 'https://fast-chamber-00133.herokuapp.com/',
             github: 'https://github.com/liaobrien/tech-blog'
       },
       {
-            id: 4,
+            id: 5,
             title: 'Weather Dashboard',
             image: WeatherDash,
             deploy: 'https://liaobrien.github.io/weather-dashboard',
             github: 'https://github.com/liaobrien/weather-dashboard'
       },
       {
-            id: 5,
+            id: 6,
             title: 'Budget Tracker',
             image: BudgetTracker,
             deploy: 'https://hidden-badlands-92774.herokuapp.com/',
             github: 'https://github.com/liaobrien/offline-budget-tracker'
       },
-      {
-            id: 6,
-            title: 'Express Note Taker',
-            image: NoteTaker,
-            deploy: 'https://pacific-hamlet-03759.herokuapp.com/',
-            github: 'https://github.com/liaobrien/note-taker'
-      }
 ]
 
 const buttonStyle = {
