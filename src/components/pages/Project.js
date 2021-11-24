@@ -11,6 +11,8 @@ const projects = [
             id: 1,
             title: 'BingeWorthy',
             image: Bingeworthy,
+            description: 'MERN Stack',
+            tools: '',
             deploy: 'https://nameless-castle-76240.herokuapp.com/',
             github: 'https://github.com/liaobrien/bingeworthy'
       },
@@ -18,6 +20,8 @@ const projects = [
             id: 2,
             title: 'Decked Out',
             image: DeckedOut,
+            description: 'test',
+            tools: '',
             deploy: 'https://hidden-island-92263.herokuapp.com/',
             github: 'https://github.com/liaobrien/Decked-Out'
       },
@@ -25,6 +29,8 @@ const projects = [
             id: 3,
             title: 'Pack Rat',
             image: PackRat,
+            description: 'test',
+            tools: '',
             deploy: 'https://liaobrien.github.io/Pack-Rat/',
             github: 'https://github.com/liaobrien/Pack-Rat'
       },
@@ -32,6 +38,8 @@ const projects = [
             id: 4,
             title: 'Tech Blog',
             image: TechBlog,
+            description: 'test',
+            tools: '',
             deploy: 'https://fast-chamber-00133.herokuapp.com/',
             github: 'https://github.com/liaobrien/tech-blog'
       },
@@ -39,6 +47,8 @@ const projects = [
             id: 5,
             title: 'Weather Dashboard',
             image: WeatherDash,
+            description: 'test',
+            tools: '',
             deploy: 'https://liaobrien.github.io/weather-dashboard',
             github: 'https://github.com/liaobrien/weather-dashboard'
       },
@@ -46,6 +56,8 @@ const projects = [
             id: 6,
             title: 'Budget Tracker',
             image: BudgetTracker,
+            description: 'test',
+            tools: '',
             deploy: 'https://hidden-badlands-92774.herokuapp.com/',
             github: 'https://github.com/liaobrien/offline-budget-tracker'
       },
@@ -70,6 +82,7 @@ export default function Project() {
                                           />
                                           <div className="card-body">
                                                 <h5 className="card-title">{project.title}</h5>
+                                                <p>{project.description}</p>
                                                 <a
                                                       href={project.deploy}
                                                       className="btn link m-1"
