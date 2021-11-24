@@ -79,24 +79,27 @@ export default function Project() {
                                           className="card-img-top"
                                           alt="screenshot"
                                     />
-                                    <div className="card-body">
+                                    <div className="card-body d-flex flex-column">
                                           <h5 className="card-title"><strong>{project.title}</strong></h5>
                                           <p>{project.description}</p>
                                           <p><strong>Tools:</strong> <br /> {project.tools}</p>
-                                          <a
-                                                href={project.deploy}
-                                                className="btn link m-1"
-                                                style={buttonStyle}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                          >Deployed</a>
-                                          <a
-                                                href={project.github}
-                                                className="btn link m-1"
-                                                style={buttonStyle}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                          >GitHub</a>
+                                          <div className="mt-auto">
+                                                <a
+                                                      href={project.deploy}
+                                                      className="btn link m-1"
+                                                      style={buttonStyle}
+                                                      target="_blank"
+                                                      rel="noreferrer"
+                                                >Deployed</a>
+                                                <a
+                                                      href={project.github}
+                                                      className="btn link m-1"
+                                                      style={buttonStyle}
+                                                      target="_blank"
+                                                      rel="noreferrer"
+                                                >GitHub</a>
+                                          </div>
+
                                     </div>
                               </div>
                         ))
