@@ -67,7 +67,15 @@ header {
   box-shadow: 8px 8px grey;
 }
 
-.skill-lists {
+.abt-header {
+  font-size: 3rem;
+}
+
+.skill-list {
+  margin-left: 3rem;
+}
+
+.two-col {
   columns: 2;
 }
 
@@ -137,6 +145,16 @@ header {
     border-left: 0px;
     border-top: 5px solid var(--dark);
   }
+
+  .skill-list {
+    list-style-position: inside;
+    margin-left: -2rem;
+  }
+
+  .two-col {
+    columns: 1;
+  }
+
   .row {
     padding: 2rem;
   }
