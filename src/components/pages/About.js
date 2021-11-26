@@ -3,7 +3,7 @@ import headshot from '../../assets/images/headshot-min.jpg'
 
 export default function About() {
       return (
-            <div id="about-me" className="container justify-content-center my-5">
+            <div className="container justify-content-center my-5">
                   <img src={headshot} id="headshot" className="mx-auto mb-5 d-block" alt="headshot" />
                   <div>
                         <h2 className="abt-header text-center">About Me</h2>
