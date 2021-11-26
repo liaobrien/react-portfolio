@@ -67,6 +67,10 @@ header {
   box-shadow: 8px 8px grey;
 }
 
+.skill-lists {
+  columns: 2;
+}
+
 .work-header {
   font-size: 3rem;
 }
