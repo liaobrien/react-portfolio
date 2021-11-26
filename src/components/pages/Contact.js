@@ -62,6 +62,7 @@ export default function Contact() {
                         <i className="contact-bi bi-linkedin"></i>
                         <a href="https://www.linkedin.com/in/lia-obrien"><p>linkedin.com/in/lia-obrien</p></a>
                   </div>
+                  <br />
                   <h2 className="text-center">You can also fill out this contact form, and I'll get back to you as soon as possible!</h2>
                   <br />
                   <form onSubmit={sendEmail}>
