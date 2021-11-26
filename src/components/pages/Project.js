@@ -71,6 +71,7 @@ const buttonStyle = {
 export default function Project() {
       return (
             <div className="row justify-content-center my-4">
+                  <h2 className="work-header text-center">My Work</h2>
                   {
                         projects.map((project) => (
                               <div key={project.id} className="card p-0 col-lg-4 m-3 text-center">
