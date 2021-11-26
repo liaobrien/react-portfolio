@@ -92,6 +92,29 @@ header {
   color: var(--light);
 }
 
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-links p {
+  font-size: 1.2rem;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: var(--bs-gray-dark);
+}
+
+.contact-links a:hover {
+  color: var(--medium);
+}
+
+.contact-bi {
+  font-size: 4rem;
+}
+
 .footer {
   list-style-type: none;
   background-color: var(--light);

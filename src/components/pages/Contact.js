@@ -53,7 +53,17 @@ export default function Contact() {
 
       return (
             <div className="contact mt-4" id="contact" style={contactStyle}>
-                  <h2 className="text-center">Have a question? Send me a message!</h2>
+                  <h2 className="text-center">Reach out to me professionally:</h2>
+                  <div className="contact-links">
+                        <i className="contact-bi bi-envelope"></i>
+                        <a href="mailto:liaobrien123@gmail.com"><p>liaobrien123@gmail.com</p></a>
+                  </div>
+                  <div className="contact-links">
+                        <i className="contact-bi bi-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/lia-obrien"><p>linkedin.com/in/lia-obrien</p></a>
+                  </div>
+                  <h2 className="text-center">You can also fill out this contact form, and I'll get back to you as soon as possible!</h2>
+                  <br />
                   <form onSubmit={sendEmail}>
                         <div className="form-group">
                               <label htmlFor="name">Name</label>
@@ -67,6 +77,7 @@ export default function Contact() {
                               <label htmlFor="message">Message</label>
                               <textarea onChange={handleInputChange} rows="3" type="text" name="message" value={message} className="form-control" id="message" />
                         </div>
+                        <br />
                         <button type="submit" className="btn btn-dark">Submit</button>
                   </form>
             </div>
